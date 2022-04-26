@@ -1,13 +1,10 @@
-name: 'Hello World'
+name: 'Copy m2'
 description: 'Greet someone and record the time'
 inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
+  location:
+    description: 'location of m2 file to copy'
     required: true
-    default: 'World'
-outputs:
-  time: # id of output
-    description: 'The time we greeted you'
+    default: 'settings.xml'
 runs:
   using: 'node16'
   main: 'dist/index.js'
