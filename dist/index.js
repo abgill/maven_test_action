@@ -1969,6 +1969,7 @@ var __webpack_exports__ = {};
 (() => {
 const core = __nccwpck_require__(127);
 const fs = __nccwpck_require__(147);
+const path = __nccwpck_require__(17);
 
 
 const location = core.getInput('location');
@@ -1980,9 +1981,12 @@ console.log("Listing files in current directory")
 fs.readdirSync('./').forEach(file => {
     console.log(file);
 });
-fs.copyFileSync(location, "~/.m2/settings.xml");
 
-console.log(`Copying file at "${location}" to ~/.m2/settings.xml`);
+const m2Dir = path.join(os.homedir(), '.m2', 'settings.xml');
+
+fs.copyFileSync(location, m2Dir);
+
+console.log(`Copying file at "${location}" to ${m2Dir}`);
 
 })();
 
