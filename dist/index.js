@@ -1970,6 +1970,7 @@ var __webpack_exports__ = {};
 const core = __nccwpck_require__(127);
 const fs = __nccwpck_require__(147);
 const path = __nccwpck_require__(17);
+const os = __nccwpck_require__(37);
 
 
 const location = core.getInput('location');

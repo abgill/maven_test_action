@@ -1,6 +1,7 @@
 const core = require('@actions/core');
 const fs = require('fs');
 const path = require("path");
+const os = require("os");
 
 
 const location = core.getInput('location');
