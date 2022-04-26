@@ -1976,11 +1976,11 @@ const os = __nccwpck_require__(37);
 const location = core.getInput('location');
 
 
-console.log('Current directory: ' + process.cwd());
+core.info('Current directory: ' + process.cwd());
 
-console.log("Listing files in current directory")
+core.info("Listing files in current directory")
 fs.readdirSync('./').forEach(file => {
-    console.log(file);
+    core.info(file);
 });
 
 const m2Dir = path.join(os.homedir(), '.m2', 'settings.xml');
@@ -1992,7 +1992,7 @@ if (!fs.existsSync(path.dirname(m2Dir))) {
 
 fs.copyFileSync(location, m2Dir);
 
-console.log(`Copying file at "${location}" to ${m2Dir}`);
+core.info(`Copying file at "${location}" to ${m2Dir}`);
 
 })();
 
