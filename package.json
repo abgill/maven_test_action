@@ -1,0 +1,23 @@
+{
+  "name": "maven_test_action",
+  "version": "0.0.1",
+  "description": "Configures settings.xml",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abgill/maven_test_action.git"
+  },
+  "author": "Andrew Gill",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/abgill/maven_test_action/issues"
+  },
+  "homepage": "https://github.com/abgill/maven_test_action#readme",
+  "dependencies": {
+    "@actions/core": "^1.7.0",
+    "@actions/github": "^5.0.1"
+  }
+}
