@@ -6,7 +6,7 @@
   "scripts": {
     "build": "ncc build index.js --license licenses.txt",
     "commit": "git commit -a",
-    "release": "npm run build; export NEW_VERSION=$(npm version patch -f); git add package.json; npm run commit ; git tag -a -m \"$NEW_VERSION\" $NEW_VERSION; git push --follow-tags"
+    "release": "npm run build; git commit -a; export NEW_VERSION=$(npm version patch -f  --no-git-tag-version); git add package.json; npm run commit ; git tag -a -m \"$NEW_VERSION\" $NEW_VERSION; git push --follow-tags"
   },
   "repository": {
     "type": "git",
