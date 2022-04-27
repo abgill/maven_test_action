@@ -1,12 +1,12 @@
 {
   "name": "maven_test_action",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "description": "Configures settings.xml",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm version patch -f; ncc build index.js --license licenses.txt",
-    "tag": "npm run build; npm version patch -f; git tag -a -m \"${npm run viewVersion}\" ${npm run viewVersion} ",
+    "tag": "npm run build; npm version patch -f; git tag -a -m \"${npm run viewVersion}\" a",
     "viewVersion": "echo $npm_package_version"
   },
   "repository": {
