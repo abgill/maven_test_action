@@ -1,6 +1,6 @@
 {
   "name": "maven_test_action",
-  "version": "0.0.44",
+  "version": "0.0.45",
   "description": "Configures settings.xml",
   "main": "index.js",
   "scripts": {
