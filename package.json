@@ -1,11 +1,11 @@
 {
   "name": "maven_test_action",
-  "version": "0.0.41",
+  "version": "0.0.42",
   "description": "Configures settings.xml",
   "main": "index.js",
   "scripts": {
     "build": "ncc build index.js --license licenses.txt",
-    "release": "npm run build; export NEW_VERSION=$(npm version patch -f); git commit -a; git tag -a -m \"$NEW_VERSION\" $NEW_VERSION; git push --follow-tags"
+    "release": "npm run build; export NEW_VERSION=$(npm version patch -f); git commit -a ; git tag -a -m \"$NEW_VERSION\" $NEW_VERSION; git push --follow-tags"
   },
   "repository": {
     "type": "git",
